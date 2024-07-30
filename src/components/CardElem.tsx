@@ -8,7 +8,7 @@ import {
 import { ICountry } from "../services/interfaces";
 
 const CardElem = ({ country }: { country: ICountry }) => (
-  <Card sx={{ minWidth: '300px', width: '40%' }}>
+  <Card sx={{ minWidth: "300px", width: "45%" }}>
     <CardActionArea>
       <CardMedia
         component="img"
