@@ -16,7 +16,7 @@ function CardList() {
     setLoading(true);
     try {
       const { data } = await axios.get(
-        "https://restcountries.com/v3.1/all?fields=idd,name,capital,flag,flags"
+        "https://restcountries.com/v3.1/all?fields=idd,name,capital,flag,flags,area,continents,population"
       );
       setCountriesList(data);
     } catch (e: any) {
