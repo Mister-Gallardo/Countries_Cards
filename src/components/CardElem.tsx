@@ -10,12 +10,12 @@ import { useNavigate } from "react-router-dom";
 
 const CardElem = ({ country }: { country: ICountry }) => {
   const navigate = useNavigate();
-  
+
   function setPath() {
-    const parseObj = encodeURIComponent(JSON.stringify(country)); 
-    navigate(`/CardPage/${parseObj}`); 
-  } 
-  
+    const parseObj = encodeURIComponent(JSON.stringify(country));
+    navigate(`/CardPage/${parseObj}`);
+  }
+
   return (
     <Card sx={{ minWidth: "300px", width: "45%" }} onClick={setPath}>
       <CardActionArea>
