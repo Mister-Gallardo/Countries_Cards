@@ -94,6 +94,7 @@ function CardList() {
         page={page}
         count={Math.ceil(counriesList.length / 20)}
         size="large"
+        siblingCount={0}
         color="primary"
         onChange={(_, value) => {
           setPage(value);
